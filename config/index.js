@@ -5,6 +5,15 @@
 const path = require('path')
 
 module.exports = {
+	"plugins": [
+    "transform-runtime",
+    ["component", [
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk"
+      }
+    ]]
+  ],
   dev: {
 
     // Paths
