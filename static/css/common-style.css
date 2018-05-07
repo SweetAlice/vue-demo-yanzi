@@ -1,0 +1,7 @@
+
+/*浮动*/
+.clearflex{clear: both;}
+.floatLeft{float: left;}
+.floatRight{float: right;}
+/*min-height，min-width,max-height,max-width*/
+.minWidth800{min-width: 800px;}
