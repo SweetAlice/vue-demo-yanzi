@@ -27,46 +27,110 @@
                     {
                         icon: 'el-icon-upload',
                         index: 'helloworld',
-                        title: '数据管理',
+                        title: 'vue基本语法',
                         subs: [
                             {
                                 index: 'helloworld',
-                                title: '数据总览'
+                                title: '基本属性和语法'
                             },
                             {
-                                index: 'dataChart',
-                                title: '实时监控'
+                                index: 'rationDa',
+                                title: '生命周期和事件'
                             },
                             {
                                 index: 'registrationData',
-                                title: '注册统计'
+                                title: '模板'
                             },
                             {
                                 index: 'loanData',
-                                title: '借款统计'
+                                title: '组件'
                             },
                             {
                                 index: 'channelData',
-                                title: '渠道统计'
+                                title: '指令'
                             },
                             {
                                 index: 'invitationData',
-                                title: '邀请统计'
+                                title: '过滤器'
+                            },
+                            {
+                                index: 'invitationData',
+                                title: '路由'
+                            }
+                            ,
+                            {
+                                index: 'invitationData',
+                                title: 'http/$axios'
+                            },
+                            {
+                                index: 'invitationData',
+                                title: 'vuex'
+                            },
+                            {
+                                index: 'invitationData',
+                                title: 'vue缓存'
+                            },
+                            {
+                                index: 'invitationData',
+                                title: '引用jquery,jquery-ui,bootstrap等'
+                            },
+                            {
+                                index: 'invitationData',
+                                title: 'webpack的基本配置和代理跨域'
                             }
                         ]
                     },
                     {
                         icon: 'el-icon-star-on',
                         index: 'userlist',
-                        title: '用户管理',
+                        title: 'vue组件',
                         subs: [
-                            {
-                                index: 'userlist',
-                                title: '用户列表'
-                            },
+                            
                             {
                                 index: 'userAssets',
-                                title: '用户资产'
+                                title: 'mac实例'
+                            },{
+                                index: 'userAssets',
+                                title: 'echarts实例'
+                            },{
+                                index: 'userAssets',
+                                title: '时间,日历,颜色,地址,地图选择插件'
+                            },{
+                                index: 'userAssets',
+                                title: '富文本编辑，上传，评分'
+                            },{
+                                index: 'userAssets',
+                                title: '弹窗，文字提示，对话框和notice'
+                            },{
+                                index: 'userlist',
+                                title: '导航（nav)和折叠面板'
+                            },{
+                                index: 'userAssets',
+                                title: 'Data模块儿'
+                            },{
+                                index: 'userlist1',
+                                title:'跑马灯和卡片'
+                            },{
+                                index: 'userlist2',
+                                title: '布局basic'
+                            },{
+                                index: 'userlist3',
+                                title: 'btn,input,单选，多选和输入框'
+                            },{
+                                index: 'userlist3',
+                                title: '计数器，选择器，级联选择器'
+                            },{
+                                index: 'userlist3',
+                                title: '开关和滑块'
+                            },{
+                                index: 'userlist3',
+                                title: '表单'
+                            },{
+                                index: 'userlist3',
+                                title: '动画'
+                            },{
+                                index: 'userlist3',
+                                title: '国际化和自定义主题'
                             }
                         ]
                     },
