@@ -1,26 +1,8 @@
 <template>
     <div class="login-wrap">
     	<div class="login-content">
-    		<div class="ms-title">vue管理系统</div>
-	        <div class="ms-login">
-	            <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="0px" class="demo-ruleForm">
-	                <el-form-item prop="username">
-	                    <el-input v-model="ruleForm.username" placeholder="用户名"></el-input>
-	                </el-form-item>
-	                <el-form-item prop="password">
-	                    <el-input type="password" placeholder="密码" v-model="ruleForm.password" @keyup.enter.native="submitForm('ruleForm')"></el-input>
-	                </el-form-item>
-	                <div class="login-btn">
-	                	<p class="login-btn-pass"> 
-	                		<el-checkbox label="记住密码" v-model="checked" ></el-checkbox>
-	                		<span class="lightblue">忘记密码</span>
-	                	</p>
-	                    <el-button type="primary" @click="submitForm('ruleForm')">登录</el-button>
-	                    <p class="login-btn-admin">没有账号<span class="lightblue">立即注册</span></p>
-	                </div>
-	                
-	            </el-form>
-	        </div>
+    		<div class="ms-title">跑马灯和卡片</div>
+	        
     	</div>
         
     </div>
@@ -102,9 +84,9 @@
 	body{background-color: #324157;}
     .login-wrap{width:100%;height:100%;background-color:#F9F9F9;}
     .login-content{width:500px;height: 400px;margin: 0 auto;position: absolute;top:calc(50% - 300px);left: calc(50% - 250px);background-color: white;border-radius: 5px;box-shadow: #2C3E50;/*background: url(../../../static/img/login-bg.png) no-repeat 0px 0px;*/ }
-    .ms-title{width:100%;text-align: center;font-size:30px;margin: 0 auto;height: 120px;line-height: 120px;background: url(../../../static/img/login-topbg.jpg) no-repeat 0px 0px;background-size: 100% 100%;color: #7DBF4A;}
+    /*.ms-title{width:100%;text-align: center;font-size:30px;margin: 0 auto;height: 120px;line-height: 120px;background: url(../../../static/img/login-topbg.jpg) no-repeat 0px 0px;background-size: 100% 100%;color: #7DBF4A;}*/
     .ms-login{width:450px;height:230px;padding:50px;border-radius: 5px;background: #fff;margin: 0 auto;}
-    .ms-login:after{content: '';background: url(../../../static/img/login-bg.png) no-repeat 0px 0px;display: block;width: 550px;height: 10px;background-size: 100%;position: absolute;bottom: -9px;left: -7%;z-index: 0;}
+    /*.ms-login:after{content: '';background: url(../../../static/img/login-bg.png) no-repeat 0px 0px;display: block;width: 550px;height: 10px;background-size: 100%;position: absolute;bottom: -9px;left: -7%;z-index: 0;}*/
     .login-btn{text-align: center;}
     .login-btn button{width:100%;height:36px;}
     .login-btn .login-btn-pass{font-size: 14px;text-align: left;padding: 5px 0;}

@@ -6,178 +6,232 @@ export default new Router({
     routes: [
         {
             path: '/',
-            redirect: '/login'
+            redirect: '/login',
+            meta: {
+		        auth: false
+		    }
         },
         {
             path: '/home',
             component: resolve => require(['../components/common/Home.vue'], resolve),
             children:[
                 {
-                    path: '/helloworld',
-                    component: resolve => require(['../components/common/HelloWorld.vue'], resolve)
+                    path: '/base',
+                    name:'base',
+                    component: resolve => require(['../components/pages/vue-base/Base.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/Methods',
+                    name:'Methods',
+                    component: resolve => require(['../components/pages/vue-base/Methods.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                }, {
+                    path: '/Template',
+                    name:'Template',
+                    component: resolve => require(['../components/pages/vue-base/Template.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+               }, {
+                    path: '/Components',
+                    name:'Components',
+                    component: resolve => require(['../components/pages/vue-base/Components.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                }, {
+                    path: '/Directive',
+                    name:'Directive',
+                    component: resolve => require(['../components/pages/vue-base/Directive.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                }, {
+                    path: '/Filter',
+                    name:'Filter',
+                    component: resolve => require(['../components/pages/vue-base/Filter.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                }, {
+                    path: '/Router',
+                    name:'Router',
+                    component: resolve => require(['../components/pages/vue-base/Router.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                }, {
+                    path: '/Axios',
+                    name:'Axios',
+                    component: resolve => require(['../components/pages/vue-base/Axios.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                }, {
+                    path: '/Vuex',
+                    name:'Vuex',
+                    component: resolve => require(['../components/pages/vue-base/Vuex.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                }, {
+                    path: '/Cache',
+                    name:'Cache',
+                    component: resolve => require(['../components/pages/vue-base/Cache.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                }, {
+                    path: '/Plugs',
+                    name:'Plugs',
+                    component: resolve => require(['../components/pages/vue-base/Plugs.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                }, {
+                    path: '/Webpack',
+                    name:'Webpack',
+                    component: resolve => require(['../components/pages/vue-base/Webpack.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                }, {
+                    path: '/Mac',
+                    name:'Mac',
+                    component: resolve => require(['../components/pages/vue-ui/Mac.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/Echarts',
+                    name:'Echarts',
+                    component: resolve => require(['../components/pages/vue-ui/Echarts.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/DateMapColor',
+                    name:'DateMapColor',
+                    component: resolve => require(['../components/pages/vue-ui/DateMapColor.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/EditUploadCode',
+                    name:'EditUploadCode',
+                    component: resolve => require(['../components/pages/vue-ui/EditUploadCode.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/WindowNotice',
+                    name:'WindowNotice',
+                    component: resolve => require(['../components/pages/vue-ui/WindowNotice.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/NavCollection',
+                    name:'NavCollection',
+                    component: resolve => require(['../components/pages/vue-ui/NavCollection.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/Data',
+                    name:'Data',
+                    component: resolve => require(['../components/pages/vue-ui/Data.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/LightCard',
+                    name:'LightCard',
+                    component: resolve => require(['../components/pages/vue-ui/LightCard.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/Layout',
+                    name:'Layout',
+                    component: resolve => require(['../components/pages/vue-ui/Layout.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/BtnInput',
+                    name:'BtnInput',
+                    component: resolve => require(['../components/pages/vue-ui/BtnInput.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/CounterSelector',
+                    name:'CounterSelector',
+                    component: resolve => require(['../components/pages/vue-ui/CounterSelector.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/OffonSlide',
+                    name:'OffonSlide',
+                    component: resolve => require(['../components/pages/vue-ui/OffonSlide.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/Form',
+                    name:'Form',
+                    component: resolve => require(['../components/pages/vue-ui/Form.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/Animation',
+                    name:'Animation',
+                    component: resolve => require(['../components/pages/vue-ui/Animation.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
+                },{
+                    path: '/InternationalizationCustom',
+                    name:'InternationalizationCustom',
+                    component: resolve => require(['../components/pages/vue-ui/InternationalizationCustom.vue'], resolve),
+                    meta:{
+					      auth:true,
+					      keep:true
+					}
                 }
-//,
-//              {
-//                  path: '/jurisdictioLists',
-//                  component: resolve => require(['../components/page/JurisdictioLists.vue'], resolve),
-//                  meta:{
-//                      auth:true
-//                  }
-//              },
-//              {
-//                  path: '/juese',
-//                  component: resolve => require(['../components/page/juese.vue'], resolve)
-//              },
-//              {
-//                  path: '/quanxian',
-//                  component: resolve => require(['../components/page/quanxian.vue'], resolve)
-//              },
-//              {
-//                  path: '/dataScreening',
-//                  component: resolve => require(['../components/page/DataScreening.vue'], resolve)
-//              },
-//              {
-//                  path: '/userlist',
-//                  name:'userlist',
-//                  component: resolve => require(['../components/page/userlist.vue'], resolve)
-//              },
-//              {
-//                  path: '/userlistDetail',
-//                  name:'userlist',
-//                  component: resolve => require(['../components/page/userlistDetail.vue'], resolve)
-//              },
-//              {
-//                  path: '/transactionList',
-//                  name:'transactionList',
-//                  component: resolve => require(['../components/page/transactionList.vue'], resolve)
-//              },
-//              {
-//                  path: '/transactionListDetail',
-//                  name:'detail',
-//                  component: resolve => require(['../components/page/transactionListDetail.vue'], resolve)
-//              },
-//              {
-//                  path: '/userAssets',
-//                  name:'userAssets',
-//                  component: resolve => require(['../components/page/userAssets.vue'], resolve)
-//              },
-//              {
-//                  path: '/dataOverview',
-//                  name:'dataOverview',
-//                  component: resolve => require(['../components/data/dataOverview.vue'], resolve)
-//              },
-//              {
-//                  path: '/loanData',
-//                  name:'loanData',
-//                  component: resolve => require(['../components/data/loanData.vue'], resolve)
-//              },
-//              {
-//                  path: '/channelData',
-//                  name:'channelData',
-//                  component: resolve => require(['../components/data/channelData.vue'], resolve)
-//              },
-//              {
-//                  path: '/invitationData',
-//                  name:'invitationData',
-//                  component: resolve => require(['../components/data/invitationData.vue'], resolve)
-//              },
-//              {
-//                  path: '/dataChart',
-//                  name:'dataChart',
-//                  component: resolve => require(['../components/data/dataChart.vue'], resolve)
-//              },
-//              {
-//                  path: '/registrationData',
-//                  name:'registrationData',
-//                  component: resolve => require(['../components/data/registrationData.vue'], resolve)
-//              },
-//              {
-//                  path: '/transactionMoney',
-//                  name: 'transactionMoney',
-//                  component: resolve => require(['../components/transaction/transactionMoney.vue'], resolve)
-//              },
-//              {
-//                  path: '/auditReport',
-//                  name:'transactionMoney',
-//                  component: resolve => require(['../components/transaction/auditReport.vue'], resolve)
-//              },
-//              {
-//                  path: '/transactionLoan',
-//                  name:'transactionLoan',
-//                  component: resolve => require(['../components/transaction/transactionLoan.vue'], resolve)
-//              },
-//              {
-//                  path: '/transactionPlayList',
-//                  name:'transactionPlayList',
-//                  component: resolve => require(['../components/transaction/transactionPlayList.vue'], resolve)
-//              },
-//              {
-//                  path: '/transactionBill',
-//                  name:'transactionBill',
-//                  component: resolve => require(['../components/transaction/transactionBill.vue'], resolve)
-//              },
-//              {
-//                  path: '/transactionWrite',
-//                  name:'transactionWrite',
-//                  component: resolve => require(['../components/transaction/transactionWrite.vue'], resolve)
-//              },
-//              {
-//                  path: '/feedback',
-//                  name:'feedback',
-//                  component: resolve => require(['../components/operate/feedback.vue'], resolve)
-//              },
-//              {
-//                  path: '/product',
-//                  name:'product',
-//                  component: resolve => require(['../components/operate/product.vue'], resolve)
-//              },
-//              {
-//                  path: '/closedArea',
-//                  name:'closedArea',
-//                  component: resolve => require(['../components/operate/closedArea.vue'], resolve)
-//              },
-//              {
-//                  path: '/authentication',
-//                  name:'authentication',
-//                  component: resolve => require(['../components/operate/authentication.vue'], resolve)
-//              },
-//              {
-//                  path: '/repaymentMethods',
-//                  name:'repaymentMethods',
-//                  component: resolve => require(['../components/operate/repaymentMethods.vue'], resolve)
-//              },
-//              {
-//                  path: '/versionUpgrade',
-//                  name:'versionUpgrade',
-//                  component: resolve => require(['../components/operate/versionUpgrade.vue'], resolve)
-//              },
-//              {
-//                  path: '/channelList',
-//                  name:'channelList',
-//                  component: resolve => require(['../components/channel/channelList.vue'], resolve)
-//              },
-//              {
-//                  path: '/channelInfor',
-//                  name:'channelInfor',
-//                  component: resolve => require(['../components/channel/channelInfor.vue'], resolve)
-//              },
-//              {
-//                  path: '/reconciliationPlay',
-//                  name:'reconciliationPlay',
-//                  component: resolve => require(['../components/reconciliation/reconciliationPlay.vue'], resolve)
-//              },
-//              {
-//                  path: '/reconciliationRepayment',
-//                  name:'reconciliationRepayment',
-//                  component: resolve => require(['../components/reconciliation/reconciliationRepayment.vue'], resolve)
-//              },
-//              {
-//                  path: '/reconciliationChannel',
-//                  name:'reconciliationChannel',
-//                  component: resolve => require(['../components/reconciliation/reconciliationChannel.vue'], resolve)
-//              }
-                
-                
             ]
        },
         {

@@ -5,3 +5,7 @@
 .floatRight{float: right;}
 /*min-height，min-width,max-height,max-width*/
 .minWidth800{min-width: 800px;}
+/*颜色*/
+.lightblue{color: #20A0FF;}
+/*修改全局上的左边菜单*/
+.sidebar > ul{min-height: 100% !important;height: auto !important;}

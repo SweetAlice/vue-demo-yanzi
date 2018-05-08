@@ -26,56 +26,56 @@
                 items: [
                     {
                         icon: 'el-icon-upload',
-                        index: 'helloworld',
+                        index: 'base',
                         title: 'vue基本语法',
                         subs: [
                             {
-                                index: 'helloworld',
+                                index: 'base',
                                 title: '基本属性和语法'
                             },
                             {
-                                index: 'rationDa',
+                                index: 'Methods',
                                 title: '生命周期和事件'
                             },
                             {
-                                index: 'registrationData',
+                                index: 'Template',
                                 title: '模板'
                             },
                             {
-                                index: 'loanData',
+                                index: 'Components',
                                 title: '组件'
                             },
                             {
-                                index: 'channelData',
+                                index: 'Directive',
                                 title: '指令'
                             },
                             {
-                                index: 'invitationData',
+                                index: 'Filter',
                                 title: '过滤器'
                             },
                             {
-                                index: 'invitationData',
+                                index: 'Router',
                                 title: '路由'
                             }
                             ,
                             {
-                                index: 'invitationData',
+                                index: 'Axios',
                                 title: 'http/$axios'
                             },
                             {
-                                index: 'invitationData',
+                                index: 'Vuex',
                                 title: 'vuex'
                             },
                             {
-                                index: 'invitationData',
+                                index: 'Cache',
                                 title: 'vue缓存'
                             },
                             {
-                                index: 'invitationData',
+                                index: 'Plugs',
                                 title: '引用jquery,jquery-ui,bootstrap等'
                             },
                             {
-                                index: 'invitationData',
+                                index: 'Webpack',
                                 title: 'webpack的基本配置和代理跨域'
                             }
                         ]
@@ -87,49 +87,49 @@
                         subs: [
                             
                             {
-                                index: 'userAssets',
+                                index: 'Mac',
                                 title: 'mac实例'
                             },{
-                                index: 'userAssets',
+                                index: 'Echarts',
                                 title: 'echarts实例'
                             },{
-                                index: 'userAssets',
+                                index: 'DateMapColor',
                                 title: '时间,日历,颜色,地址,地图选择插件'
                             },{
-                                index: 'userAssets',
+                                index: 'EditUploadCode',
                                 title: '富文本编辑，上传，评分'
                             },{
-                                index: 'userAssets',
+                                index: 'WindowNotice',
                                 title: '弹窗，文字提示，对话框和notice'
                             },{
-                                index: 'userlist',
+                                index: 'NavCollection',
                                 title: '导航（nav)和折叠面板'
                             },{
-                                index: 'userAssets',
+                                index: 'Data',
                                 title: 'Data模块儿'
                             },{
-                                index: 'userlist1',
+                                index: 'LightCard',
                                 title:'跑马灯和卡片'
                             },{
-                                index: 'userlist2',
+                                index: 'Layout',
                                 title: '布局basic'
                             },{
-                                index: 'userlist3',
+                                index: 'BtnInput',
                                 title: 'btn,input,单选，多选和输入框'
                             },{
-                                index: 'userlist3',
+                                index: 'CounterSelector',
                                 title: '计数器，选择器，级联选择器'
                             },{
-                                index: 'userlist3',
+                                index: 'OffonSlide',
                                 title: '开关和滑块'
                             },{
-                                index: 'userlist3',
+                                index: 'Form',
                                 title: '表单'
                             },{
-                                index: 'userlist3',
+                                index: 'Animation',
                                 title: '动画'
                             },{
-                                index: 'userlist3',
+                                index: 'InternationalizationCustom',
                                 title: '国际化和自定义主题'
                             }
                         ]
