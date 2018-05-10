@@ -19,5 +19,5 @@
 </script>
 <style type="text/css">
 	.wrapper{;position: relative;height: 100%;}
-	.content{margin: 20px 10px 20px 260px;height: calc(100% - 120px);background-color: white;}
+	.content{margin: 20px 10px 20px 260px;height: calc(100% - 120px);background-color: white;overflow: auto;}
 </style>
