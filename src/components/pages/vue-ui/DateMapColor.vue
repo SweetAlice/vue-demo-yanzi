@@ -15,7 +15,7 @@
 			<span>迷你版的：</span><el-color-picker v-model="color4" size="mini"></el-color-picker>
         </p>
 		<p class="line"></p>
-		<h1>(二)时间选择器</h1>
+		<h1 class="title">(二)时间选择器</h1>
 		<p>
 			<span>固定时间点：</span>
 			<el-time-select
@@ -85,11 +85,28 @@
 				</el-time-picker>
 		</p>
 		<p class="line"></p>
-		<h1>(三)日期（日历）选择器</h1>
+		<h1 class="title">(三)日期（日历）选择器</h1>
+		<p>
+			 <span>默认</span>
+			    <el-date-picker
+			      v-model="value1"
+			      type="date"
+			      placeholder="选择日期">
+			    </el-date-picker>
+			    <span>带快捷选项</span>
+			    <el-date-picker
+			      v-model="value2"
+			      align="right"
+			      type="date"
+			      placeholder="选择日期"
+			      :picker-options="pickerOptions1">
+			    </el-date-picker>
+			
+		</p>
 		<p class="line"></p>
-		<!--<h1>(四)地图选择器</h1>-->
+		<!--<h1 class="title">(四)地图选择器</h1>-->
 		<!--<p class="line"></p>-->
-		<!--<h1>(五)地址选择器</h1>-->
+		<!--<h1 class="title">(五)地址选择器</h1>-->
 	</div>
 </template>
 

@@ -9,3 +9,9 @@
 .lightblue{color: #20A0FF;}
 /*修改全局上的左边菜单*/
 .sidebar > ul{min-height: 100% !important;height: auto !important;}
+
+/*重置的样式*/
+.sidebar > ul{background: #324157;color: #BFCBD1 !important;}
+.el-menu{background: #1F2D3D;}
+.el-menu-item.is-active{background: ;}
+.el-submenu__title i,.el-menu-item,.el-submenu__title{color: #BFCBD1;}

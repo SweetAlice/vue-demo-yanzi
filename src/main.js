@@ -6,16 +6,19 @@ import router from './router'
 import axios from 'axios';
 import VueI18n from 'vue-i18n'//多语言
 import ElementUI from 'element-ui';
+
+import 'element-ui/lib/theme-chalk/index.css';//默认主题颜色
 //import 'element-ui/lib/theme-default/index.css';
-import 'element-ui/lib/theme-chalk/index.css';//css主题
+// import '../static/css/theme-green/index.css';       // 浅绿色主题
+
 //import locale from 'element-ui/lib/locale/lang/en';//国际化
 import enLocale from 'element-ui/lib/locale/lang/en';//国际化
 import zhLocale from 'element-ui/lib/locale/lang/zh-CN';//国际化
-import '../static/css/reset.css';    // 默认主题
-import '../static/css/common-style.css';    // 默认主题
+import '../static/css/reset.css';    
+import '../static/css/common-style.css';    
 
-// import '../static/css/theme-green/index.css';       // 浅绿色主题
-import "babel-polyfill";
+
+import "babel-polyfill";//兼容用于实现浏览器不支持原生功能的代码
 
 Vue.use(VueI18n);
 // Create VueI18n instance with options
