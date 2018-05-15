@@ -4,17 +4,41 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios';
+import VueI18n from 'vue-i18n'//多语言
 import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-default/index.css';
+//import 'element-ui/lib/theme-default/index.css';
+import 'element-ui/lib/theme-chalk/index.css';//css主题
+//import locale from 'element-ui/lib/locale/lang/en';//国际化
+import enLocale from 'element-ui/lib/locale/lang/en';//国际化
+import zhLocale from 'element-ui/lib/locale/lang/zh-CN';//国际化
 import '../static/css/reset.css';    // 默认主题
 import '../static/css/common-style.css';    // 默认主题
 
 // import '../static/css/theme-green/index.css';       // 浅绿色主题
-//import "babel-polyfill";
+import "babel-polyfill";
 
-Vue.use(ElementUI);
+Vue.use(VueI18n);
+// Create VueI18n instance with options
+const i18n = new VueI18n({
+  locale: 'zh', // set locale
+  messages: {
+      'zh-CN': require('./components/common/lang/zh'),   // 中文语言包
+      'en-US': require('./components/common/lang/en')    // 英文语言包
+    } // set locale messages
+})
+Vue.use(ElementUI,{
+	 i18n: (key, value) => i18n.t(key, value)
+//	  i18n: function (path, options) {
+//	    // ...
+//	  }
+  });
+//Vue.config.lang = 'zh-cn';
+//Vue.locale('en', enLocale);
+//Vue.locale('zh-cn', zhLocale);
+
+
 Vue.prototype.$axios = axios;
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 //接口挂在在vue对象上进行集体处理
 Vue.prototype.Interface = function(){
 	return {
@@ -38,6 +62,7 @@ Vue.prototype.Interface = function(){
 new Vue({
 //el: '#app',//自动挂载
   router,
+  i18n ,
   //render的两种方式：1.render: h => h(App)；2.render: x => x(App)
   render: h => h(App)
   // render: x => x(App)
