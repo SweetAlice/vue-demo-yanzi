@@ -116,7 +116,7 @@
 			return {
 				color1:"#409EFF",
 //				'#409EFF';"blue"
-				color2:null,
+				color2:"",
 				color3:'rgba(19, 206, 102, 0.8)',
 //				可以是普通颜色不参加透明度的
 				color4:"#FF00D0",
@@ -140,6 +140,29 @@
 		        timevalue1:"",
 		        startTime:"",
 		        endTime:"",
+		        pickerOptions1: {
+		          shortcuts: [{
+		            text: '今天',
+		            onClick(picker) {
+		              picker.$emit('pick', new Date());
+		            }
+		          }, {
+		            text: '昨天',
+		            onClick(picker) {
+		              const date = new Date();
+		              date.setTime(date.getTime() - 3600 * 1000 * 24);
+		              picker.$emit('pick', date);
+		            }
+		          }, {
+		            text: '一周前',
+		            onClick(picker) {
+		              const date = new Date();
+		              date.setTime(date.getTime() - 3600 * 1000 * 24 * 7);
+		              picker.$emit('pick', date);
+		            }
+		          }]
+		        },
+		        value1:"",
 		        value2:"",
 		        value3:"",
 		        value4:[new Date(2016, 9, 10, 8, 40), new Date(2016, 9, 10, 9, 40)],

@@ -4,13 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios';
-import VueI18n from 'vue-i18n'//多语言
+
 import ElementUI from 'element-ui';
 
 import 'element-ui/lib/theme-chalk/index.css';//默认主题颜色
 //import 'element-ui/lib/theme-default/index.css';
 // import '../static/css/theme-green/index.css';       // 浅绿色主题
 
+import locale from 'element-ui/lib/locale';
+import VueI18n from 'vue-i18n'//多语言
+//import messages from "./components/common/lang"
 //import locale from 'element-ui/lib/locale/lang/en';//国际化
 import enLocale from 'element-ui/lib/locale/lang/en';//国际化
 import zhLocale from 'element-ui/lib/locale/lang/zh-CN';//国际化
@@ -23,10 +26,10 @@ import "babel-polyfill";//兼容用于实现浏览器不支持原生功能的代
 Vue.use(VueI18n);
 // Create VueI18n instance with options
 const i18n = new VueI18n({
-  locale: 'zh', // set locale
+  locale: 'zh-CN', // set locale
   messages: {
-      'zh-CN': require('./components/common/lang/zh'),   // 中文语言包
-      'en-US': require('./components/common/lang/en')    // 英文语言包
+      'zh-CN': Object.assign(require('./components/common/lang/zh'),zhLocale),   // 中文语言包
+      'en-US': Object.assign(require('./components/common/lang/en'),enLocale)    // 英文语言包
     } // set locale messages
 })
 Vue.use(ElementUI,{
@@ -35,13 +38,15 @@ Vue.use(ElementUI,{
 //	    // ...
 //	  }
   });
-//Vue.config.lang = 'zh-cn';
+
 //Vue.locale('en', enLocale);
 //Vue.locale('zh-cn', zhLocale);
 
 
 Vue.prototype.$axios = axios;
 Vue.config.productionTip = false;
+Vue.config.lang = 'zh-cn';
+//console.log(thi)
 //接口挂在在vue对象上进行集体处理
 Vue.prototype.Interface = function(){
 	return {

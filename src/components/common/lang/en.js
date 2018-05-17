@@ -1,4 +1,4 @@
-export const m = { 
+module.exports = {
   music: 'Music',//网易云音乐
   findMusic: 'FIND MUSIC',//发现音乐
   myMusic: 'MY MUSIC',//我的音乐
